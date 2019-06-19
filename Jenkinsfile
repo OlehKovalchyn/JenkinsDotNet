@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'mcs Hello.cs'
-                sh './Hello.exe'
+                sh 'dotnet run'
                 }   
             }
         }
